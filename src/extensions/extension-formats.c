@@ -954,10 +954,6 @@ int RegisterExtensionFormats(sqlite3 *db)
 
 #ifdef COMPILE_SQLITE_EXTENSIONS_AS_LOADABLE_MODULE
 
-#ifdef _WIN32
-__declspec(dllexport)
-#endif
-
 int sqlite3_sqliteformats_init(sqlite3 *db, char **pzErrMsg, const sqlite3_api_routines *pApi)
 {
   int rc = SQLITE_OK;
